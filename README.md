@@ -11,6 +11,9 @@ If the number is divisible by 5 the box is green.
 
 If the number is divisible by 3 and 5 the box is yellow​.
 
+T1 preview :
+![preview](./screen.png)
+
 ## Getting Started
 
 First, run the development server:
@@ -21,14 +24,14 @@ npm run dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-The result look like this :
-![preview](./screen.png)
 
 ## Testing
 
 Testing is done with cypress.
 
 ```bash
+npm run dev
+In another terminal run :
 npm run cypress
 ```
 
