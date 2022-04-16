@@ -34,7 +34,7 @@ const NavMenu = ({ open }: { open: boolean }) => {
 
 export default function Navbar() {
   return (
-    <Disclosure as="nav" className="bg-blue-500 text-white py-3">
+    <Disclosure as="nav" className="bg-blue-500 text-white py-3 px-2">
       {({ open }) => (
         <div className="px-2">
           <div className="flex ">
