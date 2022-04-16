@@ -1,5 +1,6 @@
 import { Box } from "components/grid";
 
+// Create an array of box
 const createBoxes = (size: number) => {
   if (size == null) {
     return [];

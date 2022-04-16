@@ -6,6 +6,7 @@ const COLORS = {
   "3&5": "rgb(234, 179, 8)",
 };
 
+// Pick color by divisible
 const pickColor = (value: number) => {
   if (value == null) {
     return null;

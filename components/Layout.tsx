@@ -5,7 +5,7 @@ type Props = { children?: React.ReactNode };
 
 const Layout: React.FC<Props> = ({ children }) => {
   return (
-    <div>
+    <div className="m-5">
       <Head>
         <title>IBM</title>
         <meta name="description" content="IBM" />
