@@ -1,5 +1,5 @@
 import React from "react";
-import boxService from "services/boxServices";
+import boxService from "services/boxServices/";
 
 type Props = { size: number };
 

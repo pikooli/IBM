@@ -3,7 +3,9 @@
     "target": "es5",
     "lib": ["es5", "dom"],
     "types": ["cypress"],
-    "typeRoots": ["../types"]
+    "typeRoots": ["../types"],
+    "jsx": "react",
+    "baseUrl": "../"
   },
   "include": ["**/*.ts"]
 }
