@@ -2,12 +2,12 @@ import type { NextPage } from "next";
 import Layout from "components/Layout";
 import Grid from "components/grid";
 
-const Home: NextPage = () => {
+const NotFound: NextPage = () => {
   return (
     <Layout>
-      <Grid />
+      <h1 className="w-100 text-5xl font-bold text-center">404</h1>
     </Layout>
   );
 };
 
-export default Home;
+export default NotFound;

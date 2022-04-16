@@ -1,0 +1,6 @@
+.nav-link {
+  @apply hover:text-stone-200;
+}
+.nav-link.active {
+  @apply text-stone-200;
+}
