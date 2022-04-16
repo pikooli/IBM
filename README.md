@@ -1,6 +1,7 @@
 ### [IBM - T2](https://ibm-4yujkq3kt-pikooli.vercel.app/)
 
-This is a technical test for IBM.
+This is a technical test for IBM. 
+Done with Nextjs, Typescript, Tailwind, ReactJs.
 
 T1 is doing a grid of boxes that hold number from 1 to 100.
 Each box get different color depending of the number that it hold.
