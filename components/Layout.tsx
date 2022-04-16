@@ -1,6 +1,6 @@
 import React from "react";
 import Head from "next/head";
-import NavBar from "components/Navbar";
+import NavBar from "components/navbar/Navbar";
 
 type Props = { children?: React.ReactNode };
 
@@ -13,7 +13,7 @@ const Layout: React.FC<Props> = ({ children }) => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <NavBar />
-      <div className="m-5">{children}</div>
+      <div className="m-5 pb-3">{children}</div>
     </div>
   );
 };

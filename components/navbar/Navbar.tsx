@@ -2,8 +2,9 @@ import React from "react";
 import Link from "next/link";
 import { Disclosure } from "@headlessui/react";
 import { MenuIcon, XIcon } from "@heroicons/react/outline";
-import NavLink from "./navbar/NavLink";
+import NavLink from "./NavLink";
 
+// Button to close / open menu of navbar
 const BtnMobile = ({ open }: { open: boolean }) => {
   return (
     <Disclosure.Button className="lg:hidden inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
@@ -17,6 +18,7 @@ const BtnMobile = ({ open }: { open: boolean }) => {
   );
 };
 
+// Control display of navbar
 const NavMenu = ({ open }: { open: boolean }) => {
   return (
     <ul className="flex justify-end items-center grow">
@@ -27,16 +29,6 @@ const NavMenu = ({ open }: { open: boolean }) => {
         <BtnMobile open={open} />
       </li>
     </ul>
-  );
-};
-
-const CollapseNavbar = ({ open }: { open: boolean }) => {
-  return (
-    <div className={`lg:hidden ${open ? "block" : "hidden"}`} id="mobile-menu">
-      <ul className="mb-2 mb-lg-0">
-        <NavLink />
-      </ul>
-    </div>
   );
 };
 
@@ -51,7 +43,14 @@ export default function Navbar() {
             </Link>
             <NavMenu open={open} />
           </div>
-          <CollapseNavbar open={open} />
+          <div
+            className={`lg:hidden ${open ? "block" : "hidden"}`}
+            id="mobile-menu"
+          >
+            <ul className="mb-2 mb-lg-0">
+              <NavLink />
+            </ul>
+          </div>
         </div>
       )}
     </Disclosure>
