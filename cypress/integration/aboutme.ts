@@ -1,6 +1,7 @@
-const url = `${Cypress.env("BASE_URL")}about-me`;
 ///
 describe("About me test", () => {
+  const url = `${Cypress.env("BASE_URL")}about-me`;
+
   before(() => {});
   beforeEach(() => {
     cy.visit(url);

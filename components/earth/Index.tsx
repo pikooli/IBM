@@ -7,7 +7,7 @@ import Sphere from "components/earth/Sphere";
 import CameraController from "components/earth/Camera";
 
 const markdown = `
-### **A map of all the place I have been**
+### **A map of all the place I have been :D**
 
 Green dot are where I've been, you can rotate the map.
 `;
@@ -30,10 +30,10 @@ const Index: React.FC<Props> = () => {
   if (!worldTexture || !cloudTexture) return <></>;
 
   return (
-    <div className="h-96 md:w-1/3 ">
+    <div className="h-96 md:w-1/3">
       <ReactMarkdown rehypePlugins={[rehypeRaw]}>{markdown}</ReactMarkdown>
       <Canvas
-        className="rounded"
+        className="rounded mt-3"
         style={{
           background:
             "radial-gradient(circle at center, white, rgba(113,129,191,0.5) 50%)",

@@ -9,13 +9,17 @@ export default function NavLink() {
   return (
     <>
       <li className="pl-2 mr-2">
-        <Link href="/" text="Boxes" className={`nav-link ${active["/"]}`} />
+        <Link
+          href="/"
+          text="Boxes"
+          className={`nav-link ${active["/"] || ""}`}
+        />
       </li>
       <li className="pl-2">
         <Link
           href="/about-me"
           text="About me"
-          className={`nav-link mr-2 ${active["/about-me"]}`}
+          className={`nav-link mr-2 ${active["/about-me"] || ""}`}
         />
       </li>
     </>
