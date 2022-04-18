@@ -1,7 +1,7 @@
 ### [IBM - T1](https://ibm-5vnrby0cj-pikooli.vercel.app/)
 
 This is a technical test for IBM.
-Done with Nextjs, Typescript, Tailwind, ReactJs.
+Done with Nextjs, Typescript, Tailwind, ReactJs, Cypress.
 
 The T1 is doing a grid of boxes that hold number from 1 to 100.
 Each box get different color depending of the number that it hold.
